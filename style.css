@@ -1,0 +1,443 @@
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Open-Sans : "Open Sans";
+    --Poppins: "Poppins";
+    --light: 400;
+    --normal :600;
+    --bold :700;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--Open-Sans);
+    font-weight: var(--light);
+    font-size:18px;
+}
+@media (min-width: 300px){
+    header{
+        width:100%;
+        background-image: url(./bg-hero-mobile.svg);
+        background-color: var(--Very-Pale-Cyan);
+        margin-bottom: 60px;
+    }
+    nav{
+        padding: 20px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    header .container{
+        padding: 0 15px;
+        text-align: center;
+    }
+    nav img{
+        width: 130px;
+    }
+    nav a{
+        text-decoration: none;
+        color: var(--Very-Dark-Cyan);
+        padding: 7px 30px;
+        font-size: 0.6rem;
+        border-radius: 30px;
+        font-weight: var(--bold);
+        background-color: white;
+        box-shadow: -1px -1px 16px -4px rgba(0,0,0,0.64);
+    }
+    header .container h1{
+        font-family: var(--Poppins);
+        font-size: 1.5rem;
+        font-weight: var(--bold);
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    header .container p{
+        font-size: 1rem;
+        font-weight: var(--normal);
+        line-height: 1.4;
+        margin-bottom: 50px;
+    }
+    header .container a{
+        background-color: var(--Pink);
+        color: white;
+        text-decoration: none;
+        font-weight: var(--bold);
+        padding: 12px 60px;
+        border-radius: 30px;
+        margin-bottom: 70px;
+    }
+    header .container img{
+        width:90%;
+        margin-top: 70px;
+    }
+    .container-section{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .section{
+        box-shadow: -1px -1px 22px -4px rgba(0,0,0,0.64);
+        padding: 30px 20px 30px 20px;
+        width: 92%;
+        margin-inline: auto;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .section img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .section h2{
+        font-size: 1.5rem;
+        font-family: var(--Poppins);
+        font-weight: var(--bold);
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+    }
+     .section p{
+        font-size: 1rem;
+        font-weight: var(--normal);
+        line-height: 1.4;
+        color:var(--Grayish-Blue);
+        padding-bottom: 20px;
+    }
+    .footer{
+        margin-top: 130px;
+        padding-top: 130px;
+        background-color: var(--Very-Dark-Cyan);
+        position:relative;
+        height: auto;
+    }
+    .footer .main-container{
+        padding: 0 15px;
+        text-align: center;
+    }
+    .absolute-section{
+        width: 90%;
+        margin-inline: auto;
+        background-color: white;
+        border-radius: 10px;
+        padding: 40px 5px 50px 5px;
+        box-shadow: -1px -1px 22px -4px rgba(0,0,0,0.64);
+        position: absolute;
+        left: 5%;
+        top: -15%;
+    }
+    .absolute-section h3{
+        color: black;
+       font-weight: var(--bold);
+       font-family: var(--Poppins);
+       font-size: 1rem;
+       margin-bottom: 40px
+    }
+    .absolute-section a{
+        background-color: var(--Pink);
+        color: white;
+        text-decoration: none;
+        font-weight: var(--bold);
+        padding: 12px 50px;
+        border-radius: 30px;
+        font-size: .7rem;
+        box-shadow: -1px -1px 22px -4px rgba(0,0,0,0.2);
+    }
+    .main-container .container{
+        color:white;
+     
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    #image{
+        filter: invert(1) brightness(2);
+        width: 140px;
+        margin-bottom: 30px;
+    
+    }
+    .first-para, .second-para, .third-para{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .first-para img, .second-para img, .third-para img{
+       margin-right: 20px;
+    }
+    .first-para img{
+        margin-top: -3.2%;
+     }
+     .second, .third{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: flex-start;
+        text-align: left;
+     }
+     .second a, .third a{
+        text-decoration: none;
+        color: white;
+        font-family: var(--Poppins);
+        font-weight: var(--normal);
+        margin-bottom: 20px;
+     }
+}
+@media (min-width: 650px){
+    nav img{
+        width: 200px;
+    }
+    nav a{
+        padding: 10px 50px;
+        font-size: 1rem;
+    }
+    header .container h1{
+        font-size: 1.9rem;
+    }
+    header .container p{
+        font-size: 1.2rem;
+    }
+    header .container a{
+        font-size: 1.2rem;
+    }
+    .section h2{
+        font-size: 2.1rem;
+    }
+     .section p{
+        font-size: 1.3rem;
+    }
+    .footer{
+        margin-top: 150px;
+        padding-top: 130px;
+        background-color: var(--Very-Dark-Cyan);
+        position:relative;
+        height: auto;
+    }
+    .footer .main-container{
+        padding: 0 15px;
+        text-align: center;
+    }
+    .absolute-section{
+        left: 5%;
+        top: -20%;
+    }
+    .absolute-section h3{
+       font-size: 2.2rem;
+       margin-bottom: 40px
+    }
+    .absolute-section a{
+        font-size: 1.2rem;
+    }
+    #image{
+        width: 170px;
+    
+    }
+}
+@media (min-width: 760px){
+    /* 
+  
+    .container-section{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .section{
+        box-shadow: -1px -1px 22px -4px rgba(0,0,0,0.64);
+        padding: 30px 20px 30px 20px;
+        width: 92%;
+        margin-inline: auto;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .section img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .section h2{
+        font-size: 1.5rem;
+        font-family: var(--Poppins);
+        font-weight: var(--bold);
+        letter-spacing: 1.5px;
+        margin-bottom: 20px;
+    }
+     .section p{
+        font-size: 1rem;
+        font-weight: var(--normal);
+        line-height: 1.4;
+        color:var(--Grayish-Blue);
+        padding-bottom: 20px;
+    }
+    .footer{
+        margin-top: 130px;
+        padding-top: 130px;
+        background-color: var(--Very-Dark-Cyan);
+        position:relative;
+        height: auto;
+    }
+    .footer .main-container{
+        padding: 0 15px;
+        text-align: center;
+    }
+    
+    .main-container .container{
+        color:white;
+     
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    #image{
+        filter: invert(1) brightness(2);
+        width: 140px;
+        margin-bottom: 30px;
+    
+    }
+    .first-para, .second-para, .third-para{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .first-para img, .second-para img, .third-para img{
+       margin-right: 20px;
+    }
+    .first-para img{
+        margin-top: -3.2%;
+     }
+     .second, .third{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: flex-start;
+        text-align: left;
+     }
+     .second a, .third a{
+        text-decoration: none;
+        color: white;
+        font-family: var(--Poppins);
+        font-weight: var(--normal);
+        margin-bottom: 20px;
+     } */
+     header{
+        background-image: url(./bg-hero-desktop.svg);
+        padding-bottom: 40px;
+    }
+    header .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .container .mini{
+        width: 40%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
+        margin-top: 50px;
+    }
+    .image{
+        width:58%;
+    }
+    .image img{
+        width:100%;
+        margin-top: -30%;
+    }
+    header .container h1{
+        font-size: 1.65rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    header .container p{
+        font-size: 1.1rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+    header .container a{
+        font-size: .8rem;
+        padding: 10px 40px;
+        margin-bottom: 0px;
+    }
+    /* ....................................................... */
+    .section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: left;
+    }
+    .one img, .three img{
+        order:1;
+    }
+    .one .word, .two .word, .three .word{
+        margin-left: 5%;
+        margin-right: 2%;
+    }
+    .section img{
+        width: 45%;
+        margin-bottom: 0px;
+    }
+    .section h2{
+        font-size: 1.5rem;
+    }
+     .section p{
+        font-size: 1rem;
+        line-height: 1.1;
+    }
+    /* ......................................................................... */
+    .footer{
+        margin-top: 150px;
+        padding-top: 130px;
+        background-color: var(--Very-Dark-Cyan);
+        position:relative;
+        height: auto;
+    }
+    .footer .main-container{
+        padding: 0 15px;
+        text-align: center;
+    }
+   .absolute-section{
+        width: 60%;
+        padding: 40px 10px 60px 10px;
+        left: 20%;
+        top: -30%;
+    }
+    .absolute-section h3{
+       font-size: 1.7rem;
+       margin-bottom: 40px
+    }
+    .absolute-section a{
+        font-size: 1rem;
+    }
+    #image{
+        width: 170px;
+    }
+    .full-container{
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 2fr;
+        gap: 50px;
+    }
+    .fourth{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 40px;
+    }
+    .fourth p{
+        font-size: .6rem;
+        margin-top: -10px;
+    }
+}
